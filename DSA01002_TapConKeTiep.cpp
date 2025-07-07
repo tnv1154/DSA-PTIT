@@ -16,7 +16,7 @@ void display() {
 
 void nextGen() {
     int i = k;
-    while (i >  0 && a[i] == n - k + i) {
+    while (i > 0 && a[i] == n - k + i) {
         i--;
     }
     if (i == 0) {
