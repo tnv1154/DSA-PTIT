@@ -30,6 +30,7 @@ void nextGen() {
         final = true;
     }
     else {
+        a[i]++;
         for (int j = i + 1; j<=k; j++) {
             a[j] = a[j - 1] + 1;
         }
