@@ -5,7 +5,7 @@
 using namespace std;
 
 int n, k;
-vector<string> v, ans;
+vector<string> v;
 int b[35];
 
 void display() {
@@ -27,13 +27,13 @@ void Try(int i) {
 int main() {
     cin >> n >> k;
     string s;
-    map<string, bool> mp;
+    set<string> se;
     for (int i=0; i<n; i++) {
         cin >> s;
-        mp[s] = 1;
+        se.insert(s);
     }
-    for (auto &i : mp)
-        v.push_back(i.first);
+    for (auto i : se)
+        v.push_back(i);
     Try(1);
     return 0;
 }
